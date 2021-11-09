@@ -1,2 +1,2 @@
-# dare-java
-https://www.youtube.com/watch?v=QRj0WR5Uh2M&amp;list=PL93mKxaRDidEUX8M0Bw2yFiC_l6qM3huV
+1. '기본'을 최대한 단권화
+2. 나의 한계를 인정하고, 그 안에서 최대한을 '꾸준히'한다. 
