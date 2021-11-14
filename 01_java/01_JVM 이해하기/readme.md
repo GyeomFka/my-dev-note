@@ -59,9 +59,9 @@
   
 #### 5.1. 자료형의 종류(Simple) - 8가지자료형 中 4가지
 - [boolean] type
-  - 1bit ; 0 or 1 * 1bit(상자); 2^1 = 2
+  - 1bit : 0 or 1 * 1bit(상자) : 2^1 = 2
 - [int] type
-  - 32bit  ;0 or 1 * 32bit(상자); 2^32 = 42억9천...
+  - 32bit : 0 or 1 * 32bit(상자) : 2^32 = 42억9천...
 - [double] type
   - 64bit
 - [char] type
@@ -69,8 +69,90 @@
 - 등등
 
 ### 6. 자료형 메모리 구조
-- RAM(메모리)구조와 , 변수 개념 → 주소 참조
-- 가장 작은 구조 1bit
-- 8bit의 논리적 단위 1Byte
+
+- RAM(메모리) 논리적 구조
+  - 컴퓨터의 가장 작은 단위 : bit
+  - 1bit * 8 = 8bit
+  
+#### 6.1. why?
+- 왜 8bit인가?
+  - 8bit = 2^8 = 256 (알파벳 한 문자 표기)
+  
+#### 6.2. 8bit means
+- 8bit는 *1Byte*를 의미한다. (대문자 표기 주의)
+
+#### 6.3. example
+````java
+class A {
+    int a = 2; //값을 초기화 한다 = 메모리 공간에 할당한다
+    char b = '가';
+}
+````
+![Alt text](../99_img/05_java.jpg)
+
+- 변수 a는 3에서 6까지의 주소를 가진 & 4Byte 크기를 가진 주소이다.
+- 해당 값은 2이다.
 
 ### 7. 자바 코드 실행 원리
+1. 자바의 모든 코드는 클래스 나부에 존재해야 한다.
+2. 실행 전, static키워드를 static메모리 영역에 로드한다.
+    - main method는 {}내부가 올라가는 것이 아닌 main이라는 이름만 올라간다.
+3. 자바를 실행하면 main이라는 메소드 내부를 실행한다. 
+4. main이 실행 될 때는 main이라는 stack공간이 열린다.
+5. 메소드 내부가 끝나면 종료된다.
+````java
+public class Sample {
+    
+    static int n2 = 20;
+    
+    public static void main(String[] args) {
+        int n1 = 10;
+        System.out.println(n1); // → main이라는 stack 공간
+        System.out.println(n2); // → Sample이라는 static 공간
+        //n1과 n2를 불러오는 메모리 공간이 다르다.
+  }
+}
+````
+
+- a.java → compile → a.class → 로드 → JVM → 실행 → a.class 내부 static 키워드 체크 → static 메모리 영역 할당
+
+### 8. 클래스 자료형(Beans)
+- int와 char를 한번에 저장할 수 있는 타입이 있나? Type = (20,'A') → 없다.
+- 개발자가 정의할 수 있다 : 여러가지 data를 갖고있는 클래스
+  - 클래스 자료형
+  - 커스텀 자료형
+  - 정식명칭 Beans
+  
+- static memory area 내부에서 클래스별로 구분이 된다. <br/>
+  ![Alt text](../99_img/06_java.PNG)
+- 클래스 이름으로 인덱싱하여 data를 찾는다 MyVar.n1 ('.'은 연결 연산자)
+
+### 9. 클래스 자료형(Heap에 동적으로 저장이 되는)
+#### 9.1. class 내부의 값을 static으로 저장할때의 단점
+1. 프로그램 시작 전 ~ 프로그램 종료까지 메모리에서 사라지지 않는다.
+2. 원하는 갯수만큼 미리(여러가지) 만들어 두어야 한다.
+    - 필요할 때마다 클래스 자료형을 만든다 → *불가능*
+    - n개의 A클래스를 만들고 프로그램 실행 → n+1번째 A클래스를 만들 수 없다.
+ 
+  * why ? <b>static의 실행주기 = 시작 전 ~ 끝</b>
+  * 다른방법 : 충분히 만들어놓는다. → 비효율적
+
+` static은 정적이다. `
+- 프로그램이 시작 된 후에 관리할 방법이 없다. 
+
+` 동적인 방법을 찾아야 한다. `
+- heap 공간 이용 → *동적 저장 공간* → new A();
+
+ ` heap 공간에 A클래스가 static을 제외한 모든 data를 할당해 `
+ 
+````java
+class Sample { 
+    public static void main(String[] args) { //→ main의 stack area 가 열린다.
+        new A(); //heap공간 → 공간을 찾을 수 있는 방법이 없다. 
+        int a = 25; // main → stack area
+        //a를 찾는건 쉽지만, heap공간에 new A(); 를 찾을 수 없다. → 정의해야한다.
+        A aLoc = new A();
+        //직접 만든 A타입의 aLoc변수
+    } //→ main의 stack area가 닫힌다.
+}
+````
