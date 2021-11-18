@@ -55,3 +55,20 @@ public class VarRefEx01 {
 - a.class 의 static영역에 main메소드 적재
 - main queue open → stack memory area 생성
 > 로드 - static 키워드 탐색 - main queue open - stack공간에 main영역 생성
+
+#### 2.1.1. Method stack memory
+- 자료구조 : 자료를 저장하는 구조
+- Queue
+  - 입력방향 == 출력방향
+  - 출구가 있다.
+  - FIFO(First In First Out)
+  
+- Stack
+  - 입력방향 != 출력방향
+  - 출구가 없다.
+  - LIFO(Last In First Out)
+
+#### 2.1.2 자료구조 관점에서의 class파일 실행순서
+- [코드보기](https://github.com/GyeomFka/java-dare/blob/master/src/main/java/ch02/StackEx01.java)
+  </br>![Alt text](../99_img/08_java.JPG)  
+  </br>![Alt text](../99_img/07_java.JPG)
