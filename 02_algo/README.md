@@ -17,4 +17,4 @@
 
 
 
--[해당 레포로 ](https://github.com/GyeomFka/test-code.git)
+-[해당 레포로 대체](https://github.com/GyeomFka/test-code.git)
