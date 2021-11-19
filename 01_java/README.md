@@ -5,4 +5,4 @@
   - 대부분 커리큘럼을 따라갈 예정?
   
 ### 강좌 코드
-- [repo](https://github.com/GyeomFka/java-dare)
+- [code link](https://github.com/GyeomFka/java-dare)
