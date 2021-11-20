@@ -87,3 +87,28 @@ public class VarRefEx01 {
 
  > * main method가 stack에 올라온다. → ***자바 프로그램 실행*** 
  > * main method가 stack에서 pop된다. → ***자바 프로그램 종료***
+
+
+### 3. scope of variable
+#### 3.1 메모리 관점에서의 변수범위
+- 지역번수 → stack 영역, 생명주기 짧다.
+- 전역변수 → heap, static 영역, 생명주기 길다.
+    * 생명주기 → 메모리에 떠있는 시간
+    
+> stack 지역변수 → method실행 → 메모리 할당 → mthod 종료 → 메모리 반환 → 생명주기 짧다.
+> 
+> heap 전역변수 → new 명령어 메모리 할당 → 더 이상 참조되지 않을 때 메모리 반환
+> 
+> static 전역변수 → main이 실행되기 전에 미모리 할당 → main종료 → 메모리 반환
+
+```java
+class Sample {
+    int a = 5;
+    public static void main(String[] args) {
+        Sample s = new Sample();
+        System.out.println(s.a); //heap공간에 a가 할당된다.
+        System.out.println("여기서부터 s를 참조하지 않기 때문에 메모리에서 사라진다.");
+    }
+}
+```
+- [코드보기](https://github.com/GyeomFka/java-dare/blob/master/src/main/java/ch02/StackEx02.java)
