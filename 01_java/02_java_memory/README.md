@@ -85,5 +85,5 @@ public class VarRefEx01 {
    </br>![Alt text](../99_img/07_java.JPG)
    </br>![Alt text](../99_img/09_java.png)   
 
- * main method가 stack에 올라온다. → ***자바 프로그램 실행*** 
- * main method가 stack에서 pop된다. → ***자바 프로그램 종료***
+ > * main method가 stack에 올라온다. → ***자바 프로그램 실행*** 
+ > * main method가 stack에서 pop된다. → ***자바 프로그램 종료***
