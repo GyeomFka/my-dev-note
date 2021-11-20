@@ -70,5 +70,20 @@ public class VarRefEx01 {
 
 #### 2.1.2 자료구조 관점에서의 class파일 실행순서
 - [코드보기](https://github.com/GyeomFka/java-dare/blob/master/src/main/java/ch02/StackEx01.java)
-  </br>![Alt text](../99_img/08_java.JPG)  
-  </br>![Alt text](../99_img/07_java.JPG)
+ - 흐름.txt
+   - .java -> jvm을 위한 컴파일 -> .class -> 실행 -> jvm class파일 받음
+1) class파일 로드
+2) static키워드 서치
+3) StackEx01이라는 class영역에 
+   - static공간이 생김 (but 메소드 내부영역은 뜨지 않는다.)
+   1) a() 
+   2) b()
+   3) main()
+   
+4) main 실행 을 자료구조 관점에서 보면
+   </br>![Alt text](../99_img/08_java.JPG)  
+   </br>![Alt text](../99_img/07_java.JPG)
+   </br>![Alt text](../99_img/09_java.png)   
+
+ * main method가 stack에 올라온다. → ***자바 프로그램 실행*** 
+ * main method가 stack에서 pop된다. → ***자바 프로그램 종료***
