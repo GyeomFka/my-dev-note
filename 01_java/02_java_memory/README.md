@@ -112,3 +112,24 @@ class Sample {
 }
 ```
 - [코드보기](https://github.com/GyeomFka/java-dare/blob/master/src/main/java/ch02/StackEx02.java)
+
+#### 3.2 return of method
+- Method : 클래스의 행위
+  </br>![Alt text](../99_img/10_java.png)
+- 가령 전진() 이라는 메서드 종료가 종료되면 전진() 내부 int '현재위치' 값은 사라짐 
+  </br>→ 현재위치를 다른 곳에선 찾을 수 없다
+  </br>→ ***그래서 return을 해 줘야함***
+- Return을 해야하는 이유  
+```java
+public class MethodEx02{ 
+    static void add() {// 호출이 되면 stack공간이 메모리에 만들어진다.
+        int sum = 5 + 6; //
+        System.out.println(sum);
+    } //종료가 되면 sum값은 사라진다
+
+    public static void main(String[] args) {
+        add(); //add의 sum을 돌려 받을 수 없기때문에 add()의 return값을 받아야 한다.
+    }
+}
+```
+#### 3.3 parameter
