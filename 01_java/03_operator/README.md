@@ -17,12 +17,33 @@
   ````java
   public class OperEx05 { 
     public static void main(String[] args){
-        int n1 = 5;
-        System.out.println(n1 == 5 ? "5가 맞다":"5가 아니다");
+      int n1 = 5;
+      System.out.println(n1 == 5 ? "5가 맞다":"5가 아니다");
         
-        int point = 59;
-        System.out.println(point >= 60 ? "통과":"재수강");
-         
+      int point = 59;
+      System.out.println(point >= 60 ? "통과":"재수강");
     }
   }
   ````  
+  
+### 2. 나누기 관련 연산
+- 130 / 100  : 몫
+- 130 % 100 : 나머지
+
+### 3. 캐스팅(형변환)
+````java
+public class CastEx01 { 
+    public static void main(String[] args) {
+        int n1 = 100; //4Byte
+        double d1 = n1; //8Byte (8Byte → 4Byte) → 업캐스팅(묵시적)
+      
+        double d2 = 100.8;
+        int n2 = (int)d2; // 다운캐스팅(명시적 형변환) : data유실될 수 잇다. 
+        //Byte가 큰 data → Byte가 작은 data
+    }
+}
+````
+</br>![Alt text](../99_img/11_java.png) 
+
+#### 3.1. 연산
+- int와 double의 연산 double의 Byte를 따른다.
