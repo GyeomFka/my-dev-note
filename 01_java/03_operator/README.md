@@ -14,8 +14,8 @@
   - OR : ||
 - 조건 연산자
   - 삼항연산자
-  ````java
-  public class OperEx05 { 
+````java
+public class OperEx05 { 
     public static void main(String[] args){
       int n1 = 5;
       System.out.println(n1 == 5 ? "5가 맞다":"5가 아니다");
@@ -24,7 +24,7 @@
       System.out.println(point >= 60 ? "통과":"재수강");
     }
   }
-  ````  
+````  
   
 ### 2. 나누기 관련 연산
 - 130 / 100  : 몫
