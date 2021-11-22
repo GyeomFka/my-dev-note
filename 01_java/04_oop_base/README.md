@@ -58,3 +58,14 @@ public class Dog {
     }
 }
 ````
+- Dog → Dog라는 타입
+- dog → heap 공간을 가리키는 주소
+- new → 메모리에 할당(heap) → age, name
+- Dog() → 생성자를 호출 → 상태를 초기화 하기 위해서
+
+
+##### 1.4.3. this keyword
+- this : 자기자신의 heap 공간을 가리킨다.
+  - stack 공간 → heap 공간으로
+  
+</br>![Alt text](../99_img/12_java.png)   
