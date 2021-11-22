@@ -20,6 +20,7 @@
   - jre : 쉽게 사용 하라고 제공해주는 lib
   
 #### 1.4. Class 만들기
+##### 1.4.1. final
 - 커스텀 자료형 : 다양한 data를 가질 수 있다.
   - int → 한 가지의 상태만 가질 수 있다.
   - String → 한 가지의 상태만 가질 수 있다.
@@ -33,6 +34,27 @@ public class Dog {
 }
 ````
 
-``java
-ddfdfasdf
-``
+##### 1.4.2. constructor
+- null도 데이터 중 하나
+  - means : 값이 없음을 의미
+- ***상태를 초기화 하지 않는 이유***
+  - new연산자를 사용 할 때마다, 다른 상태를 가진 객체를 생성하기 위해서
+   
+- Default constructor
+  - 별도 생성자를 구현하면, 기본 생성자를 구현할 수 없다.
+
+````java
+public class Dog { 
+    int age = 20;               //heap 공간
+    String name = "토토";         //heap 공간
+  
+    public Dog() { //default 생성자
+        //개발자가 다른 생성자를 구현하면 자동으로 사라지는 생성자.
+    }
+    public Dog(int age, String name) { //stack공간
+        this.age = age;         //stack 공간 → heap 공간으로
+        this.name = name;       //stack 공간 → heap 공간으로
+        //age와 name은 지역변수 → Dog()라는 생성자(메서드)가 가진 지역변수
+    }
+}
+````
