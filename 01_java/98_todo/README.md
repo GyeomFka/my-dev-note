@@ -1,6 +1,6 @@
 ### TO-DO LIST
 - collection framework
-- lamda
+- lambda
 - stream
 - object
 - [https://roadmap.sh/java](https://roadmap.sh/java)
