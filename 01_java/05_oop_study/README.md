@@ -70,4 +70,18 @@ https://github.com/GyeomFka/java-dare/blob/master/src/main/java/ch05/OOPEx03.jav
   - A의 메소드를 실행시킴에도 B의 메소드가 호출 되는것 → ***동적바인딩***
     
 </br>![Alt text](../99_img/14_java.png)
+
+#### 2.3. 추상 클래스
+- new 연산자 사용 할 수가 없다 → 메모리에 띄울수가 없다.
+- 가구는 의자와 침대의 추상화 된 개념이므로 가구를 메모리에 new 할 수 없다.
+  </br>![Alt text](../99_img/15_java.png)
   
+> 단순 클래스 상속에서 -호출을 하기 위해 - 껍데기 메소드로만 존재하기 때문에
+> 추상클래스로 사용을 하는게 효율적이다.
+> 추상클래스에 추상 메서드 생성이 가능하다
+
+- 추상메서드 : 몸체가 있으면 ***안된다.***
+  - 강제성 부여하기 위해
+- 몸체{} 가 있는 메소드 생성도 가능하긴 하다.
+
+https://github.com/GyeomFka/java-dare/blob/master/src/main/java/ch05/OOPEx07.java
