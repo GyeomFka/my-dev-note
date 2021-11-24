@@ -83,3 +83,32 @@
 - 몸체{} 가 있는 메소드 생성도 가능하긴 하다.
 
 [코드보기](https://github.com/GyeomFka/java-dare/blob/master/src/main/java/ch05/OOPEx07.java)
+
+/*
+'21.11.25.(목). 여기서부터 다시 정리
+
+*/
+##### 2.3.1 추상클래스 = 미완성 설계도
+- 타입을 일치시키면서, 완성되지 않은 공통부분을 만든다.
+
+### 3. Interface
+- 행위에 대한 강제성 개념
+  
+</br>![Alt text](../99_img/16_java.png)
+
+- '약속'도 비슷한 개념인데, 일방적인 '약속' (갑-을 관계의 약속)
+  - 경우의 수를 한정 해 둔다
+- 프로토콜과는 다르다
+  - A - B - C 와 동등한 관계의 약속
+  
+#### 3.1. interface in java
+- 행위에 대한 제약
+
+#### 3.2. interface, abstract class
+- annotation → jvm이 실행시에 분석해서 확인 → jvm의 힌트
+- interface의 method는 public abstract keyword가 생략되어있다. 
+- ***abstract class 에 implement interface하면 구현 객체에서 interface의 method를 override해야한다.***
+  - 추가확인 해야함
+  
+> abstact class : 미완성된 설계도 <br>
+> interface : 행위에 대한 제약
