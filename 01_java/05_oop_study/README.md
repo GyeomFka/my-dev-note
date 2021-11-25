@@ -86,10 +86,12 @@
 
 /*
 '21.11.25.(목). 여기서부터 다시 정리
-
 */
+
 ##### 2.3.1 추상클래스 = 미완성 설계도
 - 타입을 일치시키면서, 완성되지 않은 공통부분을 만든다.
+
+[코드보기](https://github.com/GyeomFka/java-dare/blob/master/src/main/java/ch05/OOPEx09.java)
 
 ### 3. Interface
 - 행위에 대한 강제성 개념
