@@ -111,6 +111,6 @@
 - interface의 method는 public abstract keyword가 생략되어있다. 
 - ***abstract class 에 implement interface하면 구현 객체에서 interface의 method를 override해야한다.***
   - 추가확인 해야함
-  
+
 > abstact class : 미완성된 설계도 <br>
 > interface : 행위에 대한 제약
