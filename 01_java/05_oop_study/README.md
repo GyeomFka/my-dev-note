@@ -112,5 +112,48 @@
 - ***abstract class 에 implement interface하면 구현 객체에서 interface의 method를 override해야한다.***
   - 추가확인 해야함
 
-> abstact class : 미완성된 설계도 <br>
+> abstact class : 미완성된 설계도 → 구체적 행위는 자식들이 정의<br>
 > interface : 행위에 대한 제약
+
+### 4. SRP, DIP
+- SRP : single responsibility principle → ***단일 책임 원칙***
+- DIP : dependency inversion principle → ***의전성 역전 원칙***
+
+#### 4.1. SRP
+- 책임 → 행위 → Method
+- 가령 A가 a행위,b행위,c행위를 가지고 있다. 
+
+- A에게 a행위
+- B에게 b행위
+- C에게 c행위
+
+> a로 인한 문제 → A의 문제  → A를 수정한다. </br>
+> b로 인한 문제 → B의 문제  → B를 수정한다. </br>
+
+- 책임을 분리 : 책임을 명확하게 쥐어준다.
+
+#### 4.2. DIP
+
+* 자동차 구성요소
+  - 엔진
+  - 바퀴
+  - 등등
+  
+* 엔진 구성요소
+  - 2000cc
+  - 3000cc
+  - 4000cc
+  
+* 바퀴
+  - 20inch
+  - 21inch
+  - 22inch
+
+> 자동차에 2000cc를 주입이아닌
+> 자동차에 엔진을 주입시켜 엔진에서 2000 , 3000 을 교체한다
+
+### 5.왜 이런 법칙이 있나?
+- 프로그래밍을 하다보면 처음부터 완벽하게 만들 수 없다.
+- CI(Continuous Integration)를 고려해야한다. → 지속적 통합
+- '지속적 통합'을 위해 '수정'이 필요하다.
+- 개발을 할 때 srp,dip기반을 두면 추 후 수정이 편하다.
