@@ -157,3 +157,8 @@
 - CI(Continuous Integration)를 고려해야한다. → 지속적 통합
 - '지속적 통합'을 위해 '수정'이 필요하다.
 - 개발을 할 때 srp,dip기반을 두면 추 후 수정이 편하다.
+
+#### 5.1. 실제 사용 예제
+</br>![Alt text](../99_img/17_java.png)
+</br>![Alt text](../99_img/18_java.png)
+- [코드보기](https://github.com/GyeomFka/java-dare/blob/master/src/main/java/ch05/OOPEx10.java)
