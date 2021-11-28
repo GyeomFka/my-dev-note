@@ -33,3 +33,11 @@ public class GenericEx {
   
 ### 2. collection
 - 단점 : data reading이 비효율 적이다.
+- ArrayList <int> c1 = new ArrayList<>();
+  - int, double, char, boolean → 기본자료형(값)
+  - String, 클래스 → 래퍼런스 자료형(주소)
+  - ***래핑클래스*** : Integer, Double, Character, Boolean
+- 호출할때 주의점
+  - for(int i=0; i<c1.size(); i++) {}
+  - c1.size() 를 계속호출하게 된다
+  - size = c1.size(); → c1.size를 한번만 호출하게 한다.
