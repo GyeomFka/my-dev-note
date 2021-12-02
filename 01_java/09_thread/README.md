@@ -9,7 +9,7 @@
 
 #### 1.2. 실습
 - 소스 해석
-  - [코드보기](https://github.com/GyeomFka/java-dare/blob/master/src/main/java/ch07/ThreadEx01.java)
+- [코드보기](https://github.com/GyeomFka/java-dare/blob/master/src/main/java/ch07/ThreadEx01.java)
   </br>![Alt text](../99_img/20_java.png)
 1. main thread 내부에서 sub thread 객체 생성
 2. heap공간에 SubThread객체 생성(부모가 runnable)
@@ -22,9 +22,10 @@
   
 
 *** 
-스레드 객체를 만들어서 
--> run method 공간을 만든다 
--> 타겟을 설정한다(runnable 다형성)(runnable 타입을 상속받은 객체의 run method가 target이 된다)
--> run을 실행시킨다 
--> context switching 실행 
+스레드 객체를 만들어서
+<br> → run method 공간을 만든다.
+<br> → 타겟을 설정한다(runnable 다형성)
+<br> → runnable 타입을 상속받은 객체의 run method가 target이 된다.
+<br> → run을 실행시킨다.
+<br> → context switching 실행 
 ***
