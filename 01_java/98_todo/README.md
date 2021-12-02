@@ -1,9 +1,13 @@
 ### TO-DO LIST
-- collection framework
+- build
 - lambda
 - stream
-- object
 - optional
+- collection framework
+- memory management
+- serialization
+- object
+
 - [https://roadmap.sh/java](https://roadmap.sh/java)
 ![Alt text](../99_img/00_java.png)
 
