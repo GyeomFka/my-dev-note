@@ -8,7 +8,10 @@
   - 인프런 진출하시면 떡상하실듯?
 - [기술노트with 알렉](https://www.youtube.com/c/%EA%B8%B0%EC%88%A0%EB%85%B8%ED%8A%B8with%EC%95%8C%EB%A0%89)
   - 킹
+- [얄팍한 코딩사전](https://www.youtube.com/channel/UC2nkWbaJt1KQDi2r2XclzTQ/playlists)
+  - 갓
   
 ### 강좌 코드
 - [code link](https://github.com/GyeomFka/java-dare)
- 
+
+
