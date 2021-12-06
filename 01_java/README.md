@@ -6,7 +6,9 @@
 - [공부하는 개발자 - 유튜브 채널](https://www.youtube.com/channel/UCUQi7y46_TMbvPjSt1AbDug/videos)
   - 자바를 공부하기 전에 알아두면 좋은것들
   - 인프런 진출하시면 떡상하실듯?
-
+- [기술노트with 알렉](https://www.youtube.com/c/%EA%B8%B0%EC%88%A0%EB%85%B8%ED%8A%B8with%EC%95%8C%EB%A0%89)
+  - 킹
   
 ### 강좌 코드
 - [code link](https://github.com/GyeomFka/java-dare)
+ 
