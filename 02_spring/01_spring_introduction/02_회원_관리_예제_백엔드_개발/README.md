@@ -25,3 +25,20 @@ public class MemoryMemberRepository implements MemberRepository{
 > - 동시성 문제가 일어날 가능성이 높음
 > - HashMap → ConcurrentcyMap 사용 권장
 > - long → AtomicLong 사용 권장
+
+#### 1.3. 회원 Service 개발
+- 회원 Repo와 Domain을 활용해서 Business 로직을 작성한다.
+- Optional 사용 문법 간소화 코드 사용법 → 메소드 추출 
+- 서비스 method명을 통해 repo 와 비교점
+  - repository : 단순 DB조회 ㄴ느낌
+  - service : 비즈니스 냄새가 남
+  
+- service 영역은 business용어의 냄새가 많이 나야한다 → 누구든 알아볼 수 있도록
+  - 비즈니스에 의존적인 설계
+- repo는 db i/o 에 가깝도록 설계  
+
+- MemberServiceTest class에서 바라본 
+  - MemberService의 MemeberRepo 객체
+  - MemberServiceTest의 MemberRepo 객체
+  - 생성자 주입 → Dependency Injection
+  
