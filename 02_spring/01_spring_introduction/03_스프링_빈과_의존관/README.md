@@ -45,8 +45,9 @@ class MemberServiceTest {
 ##### 1.4.1. Component Scan
 - @Component를 갖고있는 @Controller, @Service, @Repository → Component scan
 
-##### 1.4.2. @Configuration 객체 생성
+##### 1.4.2. @Configuration 객체 생성 - 자바코드로 등록
 - @Configuration 객체 생성 → 이 때 Controller는 예외적으로 우선 Bean등록
+- 정형화 되지 않거나, 상황에 따라 구현 클래스를 변경해야 하는 경우 위 방법을 사용
 
 #### 1.5. Dependency Injection의 종류
 - DI
@@ -54,7 +55,7 @@ class MemberServiceTest {
     - setter주입 → 치명적인 단점 → 접근제어자로 인해 public하게 노출되어있어 문제가 될 가능성이 있다.
     - 생성자 주입 → 요즘 권장사항 → 초기 app 조립시점에서 견고하게 이루어진다.
 
-#### 1.6 컴포넌스 스캔의 범위
+#### 1.6 컴포넌스 스캔의 범위(기본값)
 - main method → package 하위
 - 동일하거나 다른 패키지는 콤포넌트 스캔 대상이 아님
 - Service객체의 @Serivce를 제거하고 내부의 @autowired 키워드를 사용한다 ? → ***불가능하다*** 
@@ -64,3 +65,5 @@ class MemberServiceTest {
 #### 1.7. 구현체가 두 개 이상일 때
 - MemberRepository 는 Interface
 - Interface를 주입 받을때에 구현체가 두 개 이상일 경우 Component Scan시 오류발생
+
+* keywork : 스프링 컨테이너, 콤포넌트, configure
