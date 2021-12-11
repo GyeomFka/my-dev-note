@@ -35,7 +35,7 @@ public class MemoryMemberRepository implements MemberRepository{
   
 - service 영역은 business용어의 냄새가 많이 나야한다 → 누구든 알아볼 수 있도록
   - 비즈니스에 의존적인 설계
-- repo는 db i/o 에 가깝도록 설계  
+- repository는 Database I/O 에 가깝도록 설계  
 
 - MemberServiceTest class에서 바라본 
   - MemberService의 MemeberRepo 객체
