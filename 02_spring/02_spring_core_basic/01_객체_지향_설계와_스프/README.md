@@ -19,7 +19,8 @@
 - 다형성 만으로는 
   - OCP 
   - DIP (구현체에만 의존하면 구현은 어떻게 하냐 ?)
-  - 를 모두 지킬 수 없다. → Dependency Injection
+  - 를 모두 지킬 수 없다. 
+  - 그래서 Spring의 Dependency Injection
   
 ### 정리
 - 설계에는 역할과 구현을 분리해야한다.
