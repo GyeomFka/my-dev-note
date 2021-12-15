@@ -41,3 +41,54 @@ public class OrderServiceImpl implements OrderService {
   
 - 관심사의 분리 → SRP 지키기
   - 구성자가 구성을 해준다.
+  
+
+### IcC, DI, Container
+- framework가 호출을 대신 해준다.
+- 구현 객체는 자신의 로직을 실행하는 역할만 담당 → 프로그램 제어 프름은 구성영역이 담당
+- 의존관계 주입
+  - 구현체는 인터페이스에만 의존한다. → 어느 구현체가 사용되는지 모른다.
+  - 의존관계를 분리해서 생각해야 한다.  
+    - ***정적인 클래스 의존관계***
+      - 실행이 없이 분석 가능하다. (import, implements, 선언 등)
+    - 실행 시점에 결정되는 ***동적인 객체 의존 관계***
+      - 실제 구현체를 선택한다.
+    
+### IoC 컨테이너, DI컨테이너
+- 주로 DI 컨테이너라 많이 쓰인다.
+
+### 컨테이너의 호출 ?
+- ApplicationContext → 스프링의 시작점
+  - Spring Container
+- 구성영역을 직접 작성하고 DI → 스프링 컨테이너를 활용으로 변경
+- @Configuration 에 해당하는 구성정보를 사용
+  - @Bean에 해당하는 메서드 모두 호출 → 반환된 객체 → 컨테이너 등록 → 등록된 객체 == Spring Bean
+  
+```java
+public class MemberApp {
+    ApplicationContext applicationContext = new AnnotationConfigApplicationContext(AppConfig.class);
+    //applicationContext.getBean("메서드명", 타입.class);
+    MemberService memberService = applicationContext.getBean("memberService", MemberService.class);
+}
+```
+```
+22:23:36.904 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+22:23:37.089 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+22:23:37.092 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+22:23:37.094 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+22:23:37.097 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+
+//↑스프링 기본 생성 객체 ↓AnnotationContext로 가져온 객체
+
+22:23:37.109 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'appConfig'
+22:23:37.120 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'memberService'
+22:23:37.142 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'memberRepository'
+22:23:37.146 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'orderService'
+22:23:37.151 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'discountPolicy'
+```
+
+- 코드가 더 복잡해진 것 같은데, 장점이?
+  - '어마어마한 장점'에 대해 앞으로 알아가보자 
+  
+- 객체지향 원리 + 다형성만으로 DIP, OCP를 지킬 수 없는 한계 → AppConfig 생성 후 DI → 이후 DI의 주체를 스프링이 가져간다
+  - 그것의 장점이 앞으로 남은시간동안 알아가도 모자라다.
