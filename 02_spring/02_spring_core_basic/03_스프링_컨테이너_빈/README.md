@@ -27,3 +27,17 @@ public class MemberApp {
 - 순수 자바 Application에서 가져다 쓸 일이 있긴 하다.
 - 사용하진 않지만 중요하다. 
 - 그래서 더 중요하다
+
+
+### BeanFactory, ApplicationContext
+- (interface)BeanFactory ← (interface)ApplicationContext ← (구현)AnnotationConfig, ApplicationContext
+  - 모두를 스프링 컨테이너라 부른다.
+  
+### 스프링 빈 설정 메타정보 - Bean Definition
+- 스프링은 어떻게 다양한 설정 방식을 지원할까 ?
+  - by "BeanDefinition" - 추상화 - 역할과 구현의 개념을 잘 나눴다.
+  - bean definition = 설정 메타정보
+  
+- 컨테이너는 위 메타정보를 기반으로 스프링 빈을 생성
+- 스프링 컨테이너 - 추상화에만 의존 - 구현체는 따로
+- 다양한 형태의 설정 정보를 B/D으로 추상화해서 사용한다.
