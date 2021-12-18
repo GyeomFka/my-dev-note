@@ -33,17 +33,17 @@
 - 스프링 빈 조회 - 기본 [V]
 - 스프링 빈 조회 - 동일한 타입이 둘 이상 [V]
 - 스프링 빈 조회 - 상속 관계 [V]
-- BeanFactory와 ApplicationContext
-- 다양한 설정 형식 지원 - 자바 코드, XML
-- 스프링 빈 설정 메타 정보 - BeanDefinition
+- BeanFactory와 ApplicationContext [V]
+- 다양한 설정 형식 지원 - 자바 코드, XML [V]
+- 스프링 빈 설정 메타 정보 - BeanDefinition [V]
 
 #### 섹션 5. 싱글톤 컨테이너
-- 웹 애플리케이션과 싱글톤
-- 싱글톤 패턴
-- 싱글톤 컨테이너
-- 싱글톤 방식의 주의점
-- @Configuration과 싱글톤
-- @Configuration과 바이트코드 조작의 마법
+- 웹 애플리케이션과 싱글톤 [V]
+- 싱글톤 패턴 [V]
+- 싱글톤 컨테이너 [V]
+- 싱글톤 방식의 주의점 [V]
+- @Configuration과 싱글톤 [V]
+- @Configuration과 바이트코드 조작의 마법 [V]
 
 #### 섹션 6. 컴포넌트 스캔
 - 컴포넌트 스캔과 의존관계 자동 주입 시작하기

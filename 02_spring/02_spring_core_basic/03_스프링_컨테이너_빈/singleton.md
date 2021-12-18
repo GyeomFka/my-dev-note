@@ -37,3 +37,22 @@ public class SingletonTest {
 - (하나의 JVM, 자바 서버 내부)클래스의 인스턴스가 딱 1개만 생성되는것을 '보장'한다.
 - 비유 : 인스턴스 생성 비용 1000, 단순 get의 비용 1
 - 스프링 컨테이너는 기본적으로 객체를 싱글톤 패턴으로 관리해준다. 
+
+### 싱글톤의 단점을 커버 한 싱글톤 컨테이너
+#### 실글톤 컨테이너 
+
+### 싱글톤 주의점 → 이거 따로 정리 해야함!!
+- 상태를 유지하게 설계하면 안된다.
+    - 무상태로 설계해야 한다.
+    - 예시코드 (멀티스레드 환경에서의)
+  
+### @Configuration → 싱글톤을 위해 존재한다...?
+- @Bean memberService → new MemoryMemberRepository() 호출
+- @Bean orderService → new MemoryMemberRepository() 호출
+- MemoryMemberRepository 두 번 호출 → 스프링이 용뺴는 재주가 있는것도 아니고 → 싱글톤이 깨지는거 아닌가요 ?
+
+### @Configuration, Byte code
+- bean.getClass() = class hello.core.AppConfig$$EnhancerBySpringCGLIB$$721f06a6
+- AppConfig@CGLIB 라이브러리를 통한 임의의 클래스
+- @Configuration 없이 @Bean만 등록된다면 ?
+  - 혼돈의 카오스
