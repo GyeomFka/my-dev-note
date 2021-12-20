@@ -6,6 +6,7 @@
 - collection framework
 - memory management
 - serialization
+- reflection  
 - object
 
 - [https://roadmap.sh/java](https://roadmap.sh/java)
