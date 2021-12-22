@@ -73,4 +73,4 @@ public class Dog {
 - this : 자기자신의 heap 공간을 가리킨다.
   - stack 공간 → heap 공간으로
   
-</br>![Alt text](../../99_img/12_java.png)   
+</br>![Alt text](../99_img/12_java.png)   

@@ -4,7 +4,7 @@
 - 가변길이의 data를 받기위해 각 포트엔 buffer가 달려있다.
 - 포트로 인해 하나의 피시로 여러 프로그램 통신이 가능하다.
 - 0 ~ 65535 → 그중 0 ~ 1023 포트는 제어 불가능
-</br>![Alt text](../../99_img/26_java.png)
+</br>![Alt text](../99_img/26_java.png)
 
 ### 2.소켓통신 실전(1:1)
 - server소켓 ↔ client소켓
@@ -12,7 +12,7 @@
 - 각각 main method를 가지고 있다.
 - 연결 후 버퍼를 생성
 
-</br>![Alt text](../../99_img/27_java.png)
+</br>![Alt text](../99_img/27_java.png)
 
 - 두개가 있는 이유
 - ServerSocket → 연결만 받는다 → 소켓을 생성한다.
@@ -21,7 +21,7 @@
 - serverSocket = new ServerSocket(10000);
     - 10000번의 포트를 open한다.
 
-</br>![Alt text](../../99_img/28_java.png)
+</br>![Alt text](../99_img/28_java.png)
 
 #### 2.1. IP
 - IPv4 체계 : 000.000.000.000 

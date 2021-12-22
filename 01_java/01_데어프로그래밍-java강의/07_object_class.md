@@ -2,7 +2,7 @@
 - Object → new 가능한 대상
 - Object class → 모든 클래스의 부모
 
-</br>![Alt text](../../99_img/19_java.png)
+</br>![Alt text](../99_img/19_java.png)
 
 
 ```java

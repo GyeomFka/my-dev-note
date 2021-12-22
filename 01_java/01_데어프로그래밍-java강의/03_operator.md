@@ -43,7 +43,7 @@ public class CastEx01 {
     }
 }
 ````
-</br>![Alt text](../../99_img/11_java.png) 
+</br>![Alt text](../99_img/11_java.png) 
 
 #### 3.1. 연산
 - int와 double의 연산 double의 Byte를 따른다.

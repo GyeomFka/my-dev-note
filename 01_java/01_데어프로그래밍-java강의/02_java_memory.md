@@ -35,7 +35,8 @@ public class VarRefEx01 {
   - 별도로 비용이 낮은 공간 → heap memory area
   
 - 일반변수 : 기본자료형
-- 래퍼런스 변수 : 클래스 자료형\
+- 래퍼런스 변수 : 클래스 자료형
+    - 참조 : data의 사이즈를 알 수 없어서 참조만 걸어둔다.
 
 ### 2. Method
 - 가정
@@ -81,9 +82,9 @@ public class VarRefEx01 {
    3) main()
    
 4) main 실행 을 자료구조 관점에서 보면
-   </br>![Alt text](../../99_img/08_java.JPG)  
-   </br>![Alt text](../../99_img/07_java.JPG)
-   </br>![Alt text](../../99_img/09_java.png)   
+   </br>![Alt text](../99_img/08_java.JPG)  
+   </br>![Alt text](../99_img/07_java.JPG)
+   </br>![Alt text](../99_img/09_java.png)   
 
  > * main method가 stack에 올라온다. → ***자바 프로그램 실행*** 
  > * main method가 stack에서 pop된다. → ***자바 프로그램 종료***
@@ -115,7 +116,7 @@ class Sample {
 
 #### 3.2 return of method
 - Method : 클래스의 행위
-  </br>![Alt text](../../99_img/10_java.png)
+  </br>![Alt text](../99_img/10_java.png)
 - 가령 전진() 이라는 메서드 종료가 종료되면 전진() 내부 int '현재위치' 값은 사라짐 
   </br>→ 현재위치를 다른 곳에선 찾을 수 없다
   </br>→ ***그래서 return을 해 줘야함***

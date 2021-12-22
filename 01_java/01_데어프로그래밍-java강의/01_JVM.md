@@ -6,17 +6,17 @@
 - *사용자는 "운영체제"가 필요함*
     - ex) win/mac/linux...
 
-![Alt text](../../99_img/01_java.jpg)
+![Alt text](../99_img/01_java.jpg)
 - OS사용자의 명령을 받아 하드웨어(HDD) 직접제어.
 
-![Alt text](../../99_img/02_java.jpg)
+![Alt text](../99_img/02_java.jpg)
 - 개발자는 JDK를 활용해 OS와 소통하고 HDD를 제어한다.
 
 ### 2. 왜 OS마다 다른 JDK를 받을까?
 - OS마다 이해할 수 있는 기본 명령어가 다르다.
 
 ### 3. JDK 환경변수 설정
-![Alt text](../../99_img/03_java.jpg)
+![Alt text](../99_img/03_java.jpg)
 - java작성 파일은 어디서 작성을 해도 된다.
 - java작성 파일은 어느 OS에서도 실행이 가능하다.
   - 각 OS에 맞는 JVM에 전달이 된다.
@@ -88,7 +88,7 @@ class A {
     char b = '가';
 }
 ````
-![Alt text](../../99_img/05_java.jpg)
+![Alt text](../99_img/05_java.jpg)
 
 - 변수 a는 3에서 6까지의 주소를 가진 & 4Byte 크기를 가진 주소이다.
 - 해당 값은 2이다.
@@ -124,7 +124,7 @@ public class Sample {
   - 정식명칭 Beans
   
 - static memory area 내부에서 클래스별로 구분이 된다. <br/>
-  ![Alt text](../../99_img/06_java.PNG)
+  ![Alt text](../99_img/06_java.PNG)
 - 클래스 이름으로 인덱싱하여 data를 찾는다 MyVar.n1 ('.'은 연결 연산자)
 
 ### 9. 클래스 자료형(Heap에 동적으로 저장이 되는)

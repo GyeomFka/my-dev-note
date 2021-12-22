@@ -1,0 +1,3 @@
+### 자바를 공부하기 전에 알아두면 좋은 것들
+- [공부하는 개발자 - 유튜브 채널](https://www.youtube.com/channel/UCUQi7y46_TMbvPjSt1AbDug)
+- 일찍 봤더라면...

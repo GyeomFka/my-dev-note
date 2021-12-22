@@ -10,7 +10,7 @@
 - Stream → 1Byte : 8bit 단위로 전송되는 통로 
   - 문자열 하나씩 전송 가능
       
-</br>![Alt text](../../99_img/24_java.png)
+</br>![Alt text](../99_img/24_java.png)
 #### 1.2. InputStream 활용
 ```java
 public class StreamEx01 {
@@ -66,7 +66,7 @@ public class StreamEx02 {
    <br> 2-4) readline() : 전송받은 데이터를 불러들이는 행위
 3) 전송된 후 버퍼가 비워지고 그자리에 나머지 데이터 갱신
 
-</br>![Alt text](../../99_img/25_java.png)
+</br>![Alt text](../99_img/25_java.png)
 ```java
 public class StreamEx03 {
     public static void main(String[] args) {

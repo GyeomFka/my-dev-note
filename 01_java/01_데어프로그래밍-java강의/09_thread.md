@@ -10,7 +10,7 @@
 #### 1.2. 실습
 - 소스 해석
 - [코드보기](https://github.com/GyeomFka/java-dare/blob/master/src/main/java/ch07/ThreadEx01.java)
-  </br>![Alt text](../../99_img/20_java.png)
+  </br>![Alt text](../99_img/20_java.png)
 1. main thread 내부에서 sub thread 객체 생성
 2. heap공간에 SubThread객체 생성(부모가 runnable)
   <br> 2.1) 스레드의 실행조건

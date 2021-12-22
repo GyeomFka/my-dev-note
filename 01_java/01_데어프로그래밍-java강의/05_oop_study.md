@@ -36,7 +36,7 @@
   
 ##### 2.2.1. 다형성
 - B extends A (B가 A를 상속할 때)
-  </br>![Alt text](../../99_img/13_java.png)
+  </br>![Alt text](../99_img/13_java.png)
   
 - Heap공간에 B를 호출하면 (new B();) → B, A가 함께 뜬다. 
 - Heap공간에 A를 호출하면 (new A();) → A만 뜬다.
@@ -68,10 +68,10 @@
   - B의 메소드를 실행한다
   - A의 메소드를 실행시킴에도 B의 메소드가 호출 되는것 → ***동적바인딩***
     
-</br>![Alt text](../../99_img/14_java.png)
+</br>![Alt text](../99_img/14_java.png)
 
 #### 2.3. 추상 클래스
-</br>![Alt text](../../99_img/15_java.png)
+</br>![Alt text](../99_img/15_java.png)
 - new 연산자 사용 할 수가 없다 → 메모리에 띄울수가 없다.
 - 가구는 의자와 침대의 추상화 된 개념이므로 가구를 메모리에 new 할 수 없다. 
 > 단순 클래스 상속 : 구현부 에서의 메서드 호출을 위해서 해당 함수가 껍데기 메서드로만 존재하기 때문에<br>
@@ -96,7 +96,7 @@
 ### 3. Interface
 - 행위에 대한 강제성 개념
   
-</br>![Alt text](../../99_img/16_java.png)
+</br>![Alt text](../99_img/16_java.png)
 
 - '약속'도 비슷한 개념인데, 일방적인 '약속' (갑-을 관계의 약속)
   - 경우의 수를 한정 해 둔다
@@ -159,6 +159,6 @@
 - 개발을 할 때 srp,dip기반을 두면 추 후 수정이 편하다.
 
 #### 5.1. 실제 사용 예제
-</br>![Alt text](../../99_img/17_java.png)
-</br>![Alt text](../../99_img/18_java.png)
+</br>![Alt text](../99_img/17_java.png)
+</br>![Alt text](../99_img/18_java.png)
 - [코드보기](https://github.com/GyeomFka/java-dare/blob/master/src/main/java/ch05/OOPEx10.java)
