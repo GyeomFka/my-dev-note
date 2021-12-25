@@ -6,7 +6,8 @@
 - collection framework
 - memory management
 - serialization
-- reflection  
+- reflection, froxy 
+- CI,CD
 - object
 
 - [https://roadmap.sh/java](https://roadmap.sh/java)
