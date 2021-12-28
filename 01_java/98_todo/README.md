@@ -10,6 +10,6 @@
 - CI,CD
 - object
 
-- [https://roadmap.sh/java](https://roadmap.sh/java)
+- [로드맵](https://roadmap.sh/java)
 ![Alt text](../99_img/00_java.png)
 

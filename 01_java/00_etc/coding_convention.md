@@ -1,5 +1,5 @@
 #### 지켜보자
-####1. 자바 코드 컨벤션
+#### 1. 자바 코드 컨벤션
 - [캠퍼스 핵데이 Java 코딩 컨벤션](https://naver.github.io/hackday-conventions-java/)
 
 #### 2. indent(들여쓰기) depth를 1이 넘지 않도록 구현하기
