@@ -4,3 +4,7 @@
 - [함께 자라기 : 애자일로 가는길](http://book.interpark.com/product/BookDisplay.do?_method=detail&sc.prdNo=298174861&gclid=CjwKCAiAhreNBhAYEiwAFGGKPFHsWvevK9wncWYg2ACwgv2xF75BwH9Ve_xMY0CCSP4a-qUoMKcM6RoCZLoQAvD_BwE)
 - [자바 웹 프로그래밍 Next Step](http://www.yes24.com/Product/Goods/31869154)
 - [객체지향 생활체조](https://jamie95.tistory.com/99)
+- [whiteship-blog](https://www.whiteship.me/)
+    - [슬기로운 자바 학습 방법 Ep1](https://www.whiteship.me/java-playlist-ep1/)
+    - [슬기로운 자바 학습 방법 Ep2](https://www.whiteship.me/java-playlist-ep2/)
+    - [슬기로운 자바 학습 방법 Ep3](https://www.whiteship.me/java-playlist-ep3/)
