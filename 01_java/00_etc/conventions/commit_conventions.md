@@ -1,8 +1,7 @@
 ### 커밋 메시지 컨벤션
 - [outstandingb.log](https://velog.io/@outstandingboy/Git-%EC%BB%A4%EB%B0%8B-%EB%A9%94%EC%8B%9C%EC%A7%80-%EA%B7%9C%EC%95%BD-%EC%A0%95%EB%A6%AC-the-AngularJS-commit-conventions)
   
-![Alt text](../99_img/00_commit.jpg)
-
+![Alt text](00_commit.JPG)
 
 - 커밋 메시지의 첫번째 줄인 커밋 메시지 헤더는 변화에 대한 간결한 설명을 포함합니다.
 
