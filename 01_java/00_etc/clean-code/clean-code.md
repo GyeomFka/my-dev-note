@@ -39,7 +39,7 @@ public class CleanCode {
 2) 그릇된 정보를 피하라 
    - user를 반환하면 user를 반환하자
 3) 이름을 의미있게 구분하라
-   - User -> UserDetail, UserInfo -> UserDetailInfo
+   - User → UserDetail, UserInfo → UserDetailInfo
 4) 검색하기 쉬운 이름을 사용하자
    - product -> prdt 식의 줄임 자제
 5) 클래스 이름, 메서드 이름
