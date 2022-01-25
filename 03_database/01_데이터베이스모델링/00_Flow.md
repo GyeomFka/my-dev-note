@@ -1,3 +1,7 @@
+### [생활코딩](https://www.youtube.com/watch?v=1d38YZKCM88&list=PLuHgQVnccGMDF6rHsY9qMuJMd295Yk4sa&index=1)
+
+<hr>
+
 ### DataBase 근본
 - 어떻게 입력하고 + 자동으로
 - 어떻게 출력하냐 + 자동으로
@@ -19,5 +23,5 @@
 4. 물리적 데이터 모델링
     - DBMS 제품 선택 및 코드 작성
 
-> 문제를 현실로부터 부양 -> 고도의 추상화 -> 컴퓨터현실로 이동
+> 문제를 현실로부터 부양 → 고도의 추상화 → 컴퓨터현실로 이동
 
