@@ -13,7 +13,7 @@
 2. 과도한 염분과 당분은 `숙면을 방해`한다.
 
 ### 4. 건강
-- [우리가 움직여야 하는 이유](https://www.youtube.com/watch?v=_xItGbdNgR8&t=29s)
+- [우리가 근력운동을 해야 하는 이유](https://www.youtube.com/watch?v=_xItGbdNgR8&t=29s)
 
 ### 3. 막연함을 없애주는 방법
 - [들어보자](https://www.youtube.com/watch?v=2fX8G78GukM)

@@ -1,6 +1,4 @@
 # 'X'stagram clone project
-<hr>
-
 ## 1. 프로젝트 목표
 ### 1.1. 설계능력
 - 개념설계, 논리설계 → DDL 추출 및 공유
@@ -38,7 +36,7 @@
 - JPA 적용
 - Restful API, Front-end 작업
 
-## 4. REF
-- [samchon/backend](https://github.com/samchon/backend)
-- [Lob-dev/somaeja](https://github.com/Lob-dev/somaeja)
-- [1ilsang/Toy-Blind](https://github.com/1ilsang/Toy-Blind)
+## 4. REF repository
+- (samchon/backend)
+- (Lob-dev/somaeja)
+- (1ilsang/Toy-Blind)
