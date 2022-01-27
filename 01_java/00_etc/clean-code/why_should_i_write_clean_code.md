@@ -33,7 +33,7 @@ write.”
 <div style="text-align: right">Robert C. Martin</div>
 
 ### Why Should I Write Clean Code
-![img.png](img.png)
+![img.png](img/img.png)
 
 - 시스템 초기 개발 비용 < 서비스가 커지면 커질수록 유지보수 비용이 훨씬 증가 하게 됨 
 - 유지보수에 대한 비용이 많이 발생한다 
