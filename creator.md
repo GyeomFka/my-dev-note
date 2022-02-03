@@ -14,6 +14,7 @@
 - [생활코딩](https://www.youtube.com/c/%EC%83%9D%ED%99%9C%EC%BD%94%EB%94%A91)
 - [코딩애플](https://www.youtube.com/channel/UCSLrpBAzr-ROVGHQ5EmxnUg)
 - [슬기로운코딩생활](https://www.youtube.com/channel/UCuwnsmB0O3o9CQPXhCwbZLA)
+- [어라운드허브 스튜디오 - AroundHub Studio](https://www.youtube.com/channel/UCO7p2fGIfwVbvk_d6sdfnDw)
 
 ### 시야확장
 - [개발바닥](https://www.youtube.com/channel/UCSEOUzkGNCT_29EU_vnBYjg)
