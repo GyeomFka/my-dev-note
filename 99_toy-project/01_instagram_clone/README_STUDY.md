@@ -35,6 +35,7 @@
 - Java 8 이후 문법 적용 → 코드 간결화 ex)Optional, Lambda, Stream ...  
 - JPA 적용
 - Restful API, Front-end 작업
+- 논리적 글쓰기
 
 ## 4. REF repository
 - (samchon/backend)
