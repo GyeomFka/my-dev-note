@@ -15,6 +15,7 @@
 - [코딩애플](https://www.youtube.com/channel/UCSLrpBAzr-ROVGHQ5EmxnUg)
 - [슬기로운코딩생활](https://www.youtube.com/channel/UCuwnsmB0O3o9CQPXhCwbZLA)
 - [어라운드허브 스튜디오 - AroundHub Studio](https://www.youtube.com/channel/UCO7p2fGIfwVbvk_d6sdfnDw)
+- [개발자 인큐티비-자바면접](https://www.youtube.com/channel/UCHFz--glnVVP1xBLA-8kltg)
 
 ### 시야확장
 - [개발바닥](https://www.youtube.com/channel/UCSEOUzkGNCT_29EU_vnBYjg)
