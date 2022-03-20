@@ -27,7 +27,10 @@
         - 지금 살고있는 하루하루에 충실할 수 있는 방법에 대해 생각해보자
         - 5분안의 행복을 찾아 떠나보자.
 - [스트레스?](https://www.youtube.com/watch?v=BrSBJmoulsc)
-- [지금 행복해지려 노렵하십셔](https://www.youtube.com/watch?v=hkktujZM_FI)
+- [지금 행복해지려 노렵하십셔1](https://www.youtube.com/watch?v=XMtQMDijumE)
+- [지금 행복해지려 노렵하십셔2](https://www.youtube.com/watch?v=hkktujZM_FI)
+- [지금 행복해지려 노렵하십셔3](https://www.youtube.com/watch?v=gMfm_xPZsR0)
+
 
 ### 5. 초기값이 쓰레기다. 기울기로 쇼부를 봐야한다.
 - [자기위로가](https://www.youtube.com/watch?v=vNC01u0-NIE)
