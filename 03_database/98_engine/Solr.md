@@ -8,6 +8,8 @@
     - SolrJ -> java환경에서 solr서버를 제어할 수 있도록 다양한 기능을 제공하는 클래스
         - [SolrJ document](https://solr.apache.org/guide/6_6/using-solrj.html)
 - [Solr detail](https://www.joinc.co.kr/w/Site/Search/Document/Solr)
+- [blog detail](https://m.blog.naver.com/statp_r/222035412885)
+- [blog detail](https://m.blog.naver.com/PostView.nhn?blogId=jabel123&logNo=220700972971&proxyReferer=https:%2F%2Fwww.google.com%2F)
 
 ### Database
 - Indexing
