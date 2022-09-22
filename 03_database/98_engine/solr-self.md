@@ -5,6 +5,9 @@
 ---
 
 ## how to use
+- Solr에서 제공된 예제 프로젝트로 개념이해
+- [블로그 링크](https://forest71.tistory.com/200) 
+
 ### version
 - JDK version에 맞는 Solr version을 선택 후 다운로드
   - JDK version : 1.8 = Solr version : 7.x
@@ -70,10 +73,19 @@
 - DIH 파일에서는 managed-schema에 지정되지 않은 컬럼은 저장되지 않는다.
   - DIH 에서는 Shemaless가 적용되지 않는다.
 [DIH solr document](https://solr.apache.org/guide/8_4/uploading-structured-data-store-data-with-the-data-import-handler.html#uploading-structured-data-store-data-with-the-data-import-handler)
+
 ---
 
-##
-- to-do : 형태소 분석 및 검색어 자동완성 기능
+## etc
+- to-do
+  1) data-import 기능 import되는 시점 적용 알아보기
+    - init, insert, update
+  2) 형태소 분석
+    - 검색어 자동완성 기능
+    ex) 사용자 '홍'입력 → "홍길동", "홍길자", "홍수아" 자동완성 제공
+      - was가 내부망이라 클라이언트에서 바로 적용가능한지 여부 확인 (detail)
+  3) SolrJ
+  
 ## concept
 - was내부 검색엔진 활용 개념 자체가
   - query -> datamap 시도할 때 delay되는 시간이 있어 검색엔진을 활용해 delay를 최대한 없애려 한다.
