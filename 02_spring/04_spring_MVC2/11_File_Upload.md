@@ -50,3 +50,43 @@ multipart 처리를 하지 않겠다는 설정
 
 
 ## Spring지원 파일 업로드
+```java
+    @PostMapping("/upload")
+    public String saveFile(@RequestParam String itemName, @RequestParam MultipartFile file, HttpServletRequest request)
+            throws IOException {
+        log.info("request={}", request);
+        log.info("itemName={}", itemName);
+        log.info("multipartFile={}", file);
+
+        if (!file.isEmpty()) {
+            String fullPath = fileDir + file.getOriginalFilename();
+            log.info("file save full path={}", fullPath);
+            file.transferTo(new File(fullPath));
+        }
+        return "upload-form";
+    }
+```
+ 
+## 예제로 구현하는 파일 업로드, 다운로드
+- 요구사항
+  - 1 상품이름
+  - 1 첨부파일
+  - 여러 이미지 파일
+- 첨부파일을 upload / download 할 수있다.
+- 업로드 한 이미지를 웹 브라우저에서 확인할 수 있다.
+
+- 고객이 업로드 한 파일명으로 서버 내부에 파일을 저장하면 안된다. 왜냐하면 서로 다른 고객이 같은 파일이름을 업로드 하는 경우 기존 파일 이름과 충돌이 날 수 있다.
+서버에서는 저장할 파일명이 겹치지 않도록 내부에서 관리하는 별도의 파일명이 필요하다. 
+
+## sum
+- html 폼 전송 방식의 차이 이해
+  - `application/x-www-form-urlencoded` -> body name:value 방식
+  - `multipart/form-data` -> 여러 방식을 전송해야한다.
+
+- servlet에서 multipart 지원을 한다.
+  - request.getParts()
+  - spring.servlet.multipart.enabled=true(default) 켜진 상태이어야 한다.
+    - was자체 설정
+  
+- spring style의 파일 전송
+  - @ReuqestParam MultipartFile file -> argument resolver
