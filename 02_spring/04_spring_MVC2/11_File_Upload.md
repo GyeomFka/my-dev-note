@@ -35,7 +35,8 @@
 
 ## 멀티파트 사용 옵션
 - 업로드 사이즈 제한
-```properties
+```properties 
+#(default)
 spring.servlet.multipart.max-file-size=1MB
 spring.servlet.multipart.max-request-size=10MB
 ```
@@ -46,3 +47,6 @@ spring.servlet.multipart.max-request-size=10MB
 spring.servlet.multipart.enabled=false
 ```
 multipart 처리를 하지 않겠다는 설정
+
+
+## Spring지원 파일 업로드
